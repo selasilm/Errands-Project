@@ -1,0 +1,225 @@
+html {
+	background-color: #092F5E;
+	height: 100%;
+}
+body{
+    margin: auto;
+}
+
+.navbar {
+	
+	margin: 0;
+	padding: 0;
+    top: 0;
+    
+}
+
+.navbar a{
+    float: right;
+	text-align: center;
+	font-size: 14px;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-weight: bold;
+    transition: opacity 0.5s;
+}
+
+.navbar a:hover{
+    opacity: 1;
+}
+
+.navEnh {
+    background-color: #ebba7f;
+    opacity: 0.87;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New';
+    top: 250px;
+    left: 500px;
+    animation: jump 1.5s;
+}
+
+@keyframes jump {
+    0%, 100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 15px;
+
+    }
+  }
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Courier New';
+    left: 500px;
+
+}
+
+h4 a{
+    color: #FFC15E;
+}
+
+
+#earth {
+    position: absolute;
+    width: 750px;
+    height: 375px;
+    right: 50%;
+    left: 25%;
+    bottom: 5px;
+    z-index: 1;
+
+
+    transition: transform 200ms ;
+    animation: rotate 4s linear infinite;
+    color: #000;
+    border-radius: 562.5px 562.5px 0 0;
+    background: url('test.jpg') 0 0 repeat / 630px;
+    box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+    transform-style: preserve-3d;
+
+}
+
+#earth:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  
+    /* this is for the shadow. lets hold on */
+    border-radius: 562.5px 562.5px 0 0;
+    box-shadow: -80px 15px 80px 10px rgba(0,0,0,.9) inset;
+  }
+
+  #earth:before {
+    /* [1] Again, break the flow to show this as an overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  
+    /* [3] Duh. */
+   
+  
+    /* [4] Add some shape and overlay effect to it */
+    opacity: .2;
+    border-radius: 562.5px 562.5px 0 0;
+    background: radial-gradient(circle at 100px 100px, #fff, #000);
+  }
+
+  @keyframes rotate {
+    0% {background-position: 0 0;}
+    100% {background-position: 630px 0;}
+  }
+
+ 
+  #truck {
+    position:absolute;  
+    width:212px;
+    bottom: 375px;
+    left: 620px;
+    
+    
+  }
+  .rect {
+    width:150px;
+    height:100px;
+    background:white;  
+    position:relative;  
+  }
+  .front {
+    position:absolute;
+    top:25px;
+    right:0;
+    background:white;
+    width:60px;
+    height:70px;
+    border-radius:0 55px 0 0;
+    
+  }
+  .hood {
+    width:225px;
+    background:white;
+    height:7px;
+    position:absolute;
+    left:-3px;
+    bottom:-2px;
+    border-radius:3px;
+    z-index:2;
+  }
+  .window{
+    position:absolute;
+    background:#092F5E;
+    width:42px;
+    height:15px;
+    border-radius:0 15px 0 0;
+    padding-bottom:10px;
+    top:18px;
+    left:7px;
+  }
+  .f_hood {
+    position:absolute;
+    background:white;
+    width:68px;
+    height:30px;
+    border-radius:0 5px 5px 0;
+    bottom:-7px;
+    z-index: 2;
+  }
+  .tyres,.f_tyres,.ff_tyres {
+    width:30px;
+    height:30px;
+    background:black;
+    border-radius:30px;
+    position:absolute;
+    border:2px solid #ccc;
+    bottom:-15px;
+    z-index:3;
+  }
+  .tyres{left:10px;}
+  .f_tyres {
+     left:100px;
+  }
+  .ff_tyres {
+    right:10px;
+  }
+  .tyres::after,
+  .f_tyres::after,
+  .ff_tyres::after {
+    content:"";
+    background:rgb(201, 130, 130);
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    top:5px;left:5px;
+    position:absolute;
+  }
+
+  .front, .hood, .rect, .f_hood{
+    animation: carmov 1s infinite;
+}
+  
+  @keyframes carmov {
+    0%, 100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 10px;
+
+    }
+  }
+  
