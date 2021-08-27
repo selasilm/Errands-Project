@@ -1,0 +1,284 @@
+/* MacBook Pro - 1 */
+html{
+position: relative;
+width: 1440px;
+height: 900px;
+overflow: hidden;
+
+background: #172572;
+}
+
+
+/* Group 1 */
+#car{
+position: absolute;
+width: 200.26px;
+height: 128px;
+left: 0px;
+top: 2px;
+z-index: 2;
+}
+
+
+/* Rectangle 1 */
+.body{
+position: absolute;
+width: 147.58px;
+height: 98.74px;
+left: 668.89px;
+top: 486px;
+
+background: #FFFCFC;
+border-radius: 23px 50px 20px 0px;
+}
+
+/* Rectangle 2 */
+.bonnet{
+position: absolute;
+width: 69.34px;
+height: 49.37px;
+left: 628px;
+top: 535.37px;
+
+background: #FFFDFD;
+border-radius: 20px 15px 15px 15px;
+}
+
+/* Front tyre */
+.f_tyre{
+position: absolute;
+width: 46.23px;
+height: 47.54px;
+left: 653.78px;
+top: 566.46px;
+border-radius: 50%;
+
+background: #0E0D0D;
+}
+
+/* Front inner tyre */
+.f_tyrein{
+position: absolute;
+width: 16px;
+height: 16.46px;
+left: 668.89px;
+top: 580.17px;
+border-radius: 50%;
+
+background: #C4C4C4;
+}
+
+/* Hind tyre */
+.b_tyre{
+position: absolute;
+width: 46.23px;
+height: 47.54px;
+left: 755.13px;
+top: 566.46px;
+border-radius: 50%;
+
+background: #090808;
+}
+
+/* Hind inner tyre */
+.b_tyrein{
+position: absolute;
+width: 16px;
+height: 16.46px;
+left: 770.24px;
+top: 582px;
+border-radius: 50%;
+
+background: #C4C4C4;
+}
+
+/* Rectangle 3 */
+.window{
+position: absolute;
+width: 72.9px;
+height: 38.4px;
+left: 682.23px;
+top: 496.97px;
+
+background: rgba(202, 242, 242, 0.67);
+border: 1px solid rgba(170, 166, 166, 0.54);
+border-radius: 23px 0px 10px;
+}
+
+/* Rectangle 4 */
+.boot{
+position: absolute;
+width: 26.71px;
+height: 26.57px;
+left: 800.26px;
+top: 556.8px;
+
+background: #FBFFFF;
+border-radius: 18px 0px 10px 18px;
+transform: matrix(-1, 0.01, -0.01, -1, 0, 0);
+}
+
+
+
+/* Sign up to access our wide array of services */
+h4{
+position: absolute;
+width: 429px;
+height: 56px;
+left: 550px;
+top: 320px;
+
+font-family: Revalia;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+white-space: nowrap;
+color: #FFFFFF
+}
+
+.signup{
+text-decoration-line: underline;
+color: #CBBF96;
+white-space: nowrap;
+padding-right: 8px;
+}
+
+.signup:hover{
+color: #e4d5a6;
+
+}
+
+.nextline{
+position: absolute;
+width: 429px;
+height: 56px;
+left: 610px;
+top: 350px;
+
+font-family: Revalia;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+white-space: nowrap;
+color: #FFFFFF
+}
+
+
+/* Sign in About us Contact */
+nav ul{
+list-style: none;
+
+
+position: absolute;
+width: 412px;
+height: 62px;
+left: 1012px;
+top: 20px;
+}
+
+nav ul li{
+display: inline-block;
+}
+
+nav ul li a{
+
+font-family: Revalia;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+padding: 8px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #CBBF96;
+}
+
+nav a{
+display: inline;
+}
+
+nav ul li a:link {
+text-decoration: none;
+}
+  
+nav ul li a:visited {
+text-decoration: none;
+}
+  
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+/* Rectangle 5 */
+.errand_des1{
+position: absolute;
+width: 132px;
+height: 36px;
+left: 1048px;
+top: 160px;
+border-bottom: 33.5px solid #C4C4C4;
+border-left: 15.5px solid transparent;
+float: left;
+
+}
+
+/* Rectangle 6 */
+.errand_des2{
+position: absolute;
+width: 152px;
+height: 34px;
+left: 1028px;
+top: 215.5px;
+border-bottom: 33.5px solid #C4C4C4;
+border-left: 15.5px solid transparent;
+float: left;
+
+}
+
+/* ERRANDS */
+h1{
+position: absolute;
+width: 724px;
+height: 186px;
+left: 400px;
+top: 45px;
+
+font-family: Racing Sans One;
+font-style: normal;
+font-weight: normal;
+font-size: 144px;
+line-height: 181px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+/* globe */
+.globe {
+position: absolute;
+width: 988px;
+height: 922px;
+left: 234px;
+top: 594px;
+
+border-radius: 50%;
+
+overflow: hidden;
+
+background: #6BBDC8;
+}
